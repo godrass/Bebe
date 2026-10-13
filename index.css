@@ -1,0 +1,221 @@
+
+:root {
+    --color-accent: #6B8E3D;
+    --color-accent-dark: #4F6B2E;
+    --color-ink: #1B2230;
+    --color-muted: #5B6270;
+    --color-bg: #FFFFFF;
+    --color-hero: #23251F;
+    --color-footer: #262B3A;
+    --color-border: #E6E8E2;
+    --color-on-dark: #FFFFFF;
+
+    --radius-card: 0.75rem;
+    --radius-control: 0.5rem;
+
+    --container-max: 75rem;
+    --gutter: 1.25rem;
+    --section-gap: clamp(3rem, 2rem + 5vw, 6rem);
+
+    --font-heading: "Chakra Petch", system-ui, sans-serif;
+    --font-body: "Mada", system-ui, sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-ink);
+    background: var(--color-bg);
+}
+
+h1,
+h2,
+h3,
+.font-heading {
+    font-family: var(--font-heading);
+}
+
+.text-display {
+    font-size: clamp(2.125rem, 1.2rem + 4vw, 4rem);
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.text-title {
+    font-size: clamp(1.5rem, 1.1rem + 1.6vw, 2.25rem);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.text-lead {
+    font-size: clamp(0.875rem, 0.8rem + 0.3vw, 1.0625rem);
+    line-height: 1.6;
+    color: var(--color-muted);
+}
+
+.container-page {
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+}
+
+.section-space {
+    padding-block: var(--section-gap);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero {
+    background: linear-gradient(
+        rgb(0 0 0 / .35),
+        rgb(0 0 0 / .35)
+    ), url("https://moduldom.com.ua/wp-content/uploads/2024/06/terassa-scaled.jpg") center / cover;
+    color: var(--color-on-dark);
+}
+
+.stats {
+    background: var(--color-accent);
+    color: var(--color-on-dark);
+    border-radius: var(--radius-card);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: .75rem 1.5rem;
+    border-radius: var(--radius-control);
+    background: var(--color-accent);
+    color: var(--color-on-dark);
+    font-weight: 600;
+    transition: background-color .2s;
+}
+
+.btn:hover {
+    background: var(--color-accent-dark);
+}
+
+.btn--ghost {
+    background: rgb(255 255 255 / .2);
+    border: 1px solid rgb(255 255 255 / .4);
+}
+
+.btn--ghost:hover {
+    background: rgb(255 255 255 / .35);
+}
+
+.btn--dark {
+    background: var(--color-footer);
+}
+
+.btn--dark:hover {
+    background: var(--color-ink);
+}
+
+a:focus-visible,
+.btn:focus-visible,
+summary:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--color-accent-dark);
+    outline-offset: 2px;
+}
+
+.img-round {
+    width: 100%;
+    border-radius: var(--radius-card);
+    display: block;
+}
+
+.cat-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-card);
+}
+
+.cat-card__label {
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    padding: 1rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--color-on-dark);
+    background: linear-gradient(
+        transparent,
+        rgb(0 0 0 / .6)
+    );
+}
+
+.product__box {
+    position: relative;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    padding: 1rem;
+}
+
+.product__add {
+    position: absolute;
+    right: .75rem;
+    bottom: .75rem;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.price-old {
+    color: var(--color-muted);
+    text-decoration: line-through;
+    font-size: .875rem;
+}
+
+.dot {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: var(--color-border);
+}
+
+.dot--active {
+    background: var(--color-ink);
+}
+
+.icon-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn--accent {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.bg-cta {
+    background: var(--color-accent);
+    color: var(--color-on-dark);
+}
+
+.bg-footer {
+    background: var(--color-footer);
+    color: var(--color-on-dark);
+}
+
+.field {
+    width: 100%;
+    padding: .75rem 1rem;
+    border-radius: var(--radius-control);
+    background: #fff;
+    color: var(--color-ink);
+}
+
+.footer-link {
+    color: rgb(255 255 255 / .8);
+    font-size: .875rem;
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terrasa — садові й терасні меблі</title>
+    <meta name="description" content="Садові й терасні меблі: крісла, столи, дивани й освітлення для двору.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600&family=Mada:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="hero">
+        <header class="container-page flex items-center justify-between gap-6 py-6">
+            <a href="#top" class="font-heading text-2xl font-semibold">Terrasa</a>
+            <nav class="hidden md:flex gap-8 text-sm" aria-label="Головне меню">
+                <a href="#top">Головна</a><a href="#about">Про нас</a><a href="#products">Каталог</a><a
+                    href="#footer">Контакти</a>
+            </nav>
+            <details class="md:hidden relative">
+                <summary class="cursor-pointer list-none font-semibold">Меню</summary>
+                <nav class="absolute right-0 mt-3 flex flex-col gap-3 p-4 rounded-lg bg-[var(--color-footer)] min-w-48"
+                    aria-label="Мобільне меню">
+                    <a href="#top">Головна</a><a href="#about">Про нас</a><a href="#products">Каталог</a><a
+                        href="#footer">Контакти</a>
+                </nav>
+            </details>
+        </header>
+
+        <section id="top" class="container-page text-center pt-10 md:pt-16 pb-24 md:pb-40">
+            <h1 class="text-display max-w-3xl mx-auto">Створіть двір, у якому хочеться жити</h1>
+            <p class="text-lead !text-white/80 max-w-xl mx-auto mt-5 mb-8">Садові дивани, столи й крісла для тераси:
+                витримують дощ, сонце й зиму.</p>
+            <a href="#products" class="btn btn--ghost">Дивитись каталог</a>
+        </section>
+    </div>
+
+    <main>
+        <section class="container-page -mt-12" aria-label="Про нас у цифрах">
+            <div class="stats grid grid-cols-2 md:grid-cols-4 gap-y-6 py-8 text-center">
+                <p class="md:px-4"><span class="block font-heading text-2xl font-semibold">7</span>років досвіду</p>
+                <p class="md:px-4 md:border-l border-white/30"><span
+                        class="block font-heading text-2xl font-semibold">2</span>склади в країні</p>
+                <p class="md:px-4 md:border-l border-white/30"><span
+                        class="block font-heading text-2xl font-semibold">10k+</span>проданих меблів</p>
+                <p class="md:px-4 md:border-l border-white/30"><span
+                        class="block font-heading text-2xl font-semibold">260+</span>моделей</p>
+            </div>
+        </section>
+
+        <section id="about" class="section-space">
+            <div class="container-page grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <img src="перше.jpg" alt="Лаунж-зона на терасі з дерев'яним столиком" class="img-round">
+                <div>
+                    <h2 class="text-title mb-4">Ми робимо ваш двір затишнішим</h2>
+                    <p class="text-lead mb-6">Підбираємо садові меблі під ваш простір: від балкона до великої тераси.
+                    </p>
+                    <ul class="flex flex-col gap-4">
+                        <li class="flex gap-3"><img src="img/check.svg" alt="" class="w-6 h-6 mt-1">
+                            <div>
+                                <h3 class="font-semibold">Підбір під ваш двір</h3>
+                                <p class="text-lead">Порадимо комплект за розміром і стилем ділянки.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3"><img src="img/check.svg" alt="" class="w-6 h-6 mt-1">
+                            <div>
+                                <h3 class="font-semibold">Власні моделі меблів</h3>
+                                <p class="text-lead">Виготовляємо з тику, ротангу й алюмінію.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-[var(--section-gap)]">
+            <div class="container-page flex flex-col md:flex-row gap-8">
+                <div class="md:basis-1/4 md:shrink-0">
+                    <h2 class="text-title mb-4">Новинки в магазині</h2>
+                    <p class="text-lead mb-6">Свіжі колекції щотижня, із добірками за акційними цінами.</p>
+                    <a href="#products" class="btn">
+                        Усі товари
+                    </a>
+                </div>
+                <div class="flex gap-4 overflow-x-auto md:flex-1">
+                    <article class="cat-card shrink-0 basis-2/3 sm:basis-[40%] md:basis-[30%] lg:basis-[24%]">
+                        <img src="друге.jpg" alt="Категорія: Крісла" class="w-full block" loading="lazy">
+                        <h3 class="cat-card__label text-xl">Крісла</h3>
+                    </article>
+                    <article class="cat-card shrink-0 basis-2/3 sm:basis-[40%] md:basis-[30%] lg:basis-[24%]">
+                        <img src="третє.jpg" alt="Категорія: Столи" class="w-full block" loading="lazy">
+                        <h3 class="cat-card__label text-xl">Столи</h3>
+                    </article>
+                    <article class="cat-card shrink-0 basis-2/3 sm:basis-[40%] md:basis-[30%] lg:basis-[24%]">
+                        <img src="четверте.jpg" alt="Категорія: Дивани" class="w-full block" loading="lazy">
+                        <h3 class="cat-card__label text-xl">Дивани</h3>
+                    </article>
+                    <article class="cat-card shrink-0 basis-2/3 sm:basis-[40%] md:basis-[30%] lg:basis-[24%]">
+                        <img src="бляхапяте.jpg" alt="Категорія: Освітлення" class="w-full block" loading="lazy">
+                        <h3 class="cat-card__label text-xl">Освітлення</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-[var(--section-gap)]">
+            <div class="container-page grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div>
+                    <h2 class="text-title mb-4">Найкращі меблі для двору — від виробника</h2>
+                    <p class="text-lead">Контролюємо якість на кожному етапі, від дерева до фінішного покриття, і даємо
+                        гарантію на всі моделі.</p>
+                </div>
+                <img src="связь.jpg" alt="Виробництво садових меблів" class="img-round" loading="lazy">
+            </div>
+        </section>
+
+        <section id="products" class="pb-[var(--section-gap)]">
+            <div class="container-page">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <h2 class="text-title mb-3">Усі товари</h2>
+                    <p class="text-lead">Відібрані моделі, що поєднують якість, зручність і доступну ціну.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <article>
+                        <div class="product__box">
+                            <img src="лампа.jpg" alt="Садовий ліхтар" class="w-full block" loading="lazy">
+                            <button type="button" class="product__add" aria-label="Додати «Садовий ліхтар» в кошик"><img
+                                    src="img/plus.svg" alt=""></button>
+                        </div>
+                        <h3 class="text-lg mt-3">Садовий ліхтар «Місяць»</h3>
+                        <p class="flex items-baseline gap-2"><span class="font-semibold">1 900 грн</span><span
+                                class="price-old">2 400 грн</span></p>
+                    </article>
+                    <article>
+                        <div class="product__box">
+                            <img src="бе.jpg" alt="Крісло Адірондак" class="w-full block" loading="lazy">
+                            <button type="button" class="product__add" aria-label="Додати «Крісло «Тик»» в кошик"><img
+                                    src="img/plus.svg" alt=""></button>
+                        </div>
+                        <h3 class="text-lg mt-3">Крісло Адірондак</h3>
+                        <p class="flex items-baseline gap-2"><span class="font-semibold">2 500 грн</span><span
+                                class="price-old">3 100 грн</span></p>
+                    </article>
+                    <article>
+                        <div class="product__box">
+                            <img src="шкаф.jpg" alt="Шафа для інвентарю «Сад»" class="w-full block" loading="lazy">
+                            <button type="button" class="product__add"
+                                aria-label="Додати «Шафа для інвентарю «Сад»» в кошик"><img src="img/plus.svg"
+                                    alt=""></button>
+                        </div>
+                        <h3 class="text-lg mt-3">Шафа для інвентарю «Сад»</h3>
+                        <p class="flex items-baseline gap-2"><span class="font-semibold">6 200 грн</span><span
+                                class="price-old">7 800 грн</span></p>
+                    </article>
+                    <article>
+                        <div class="product__box">
+                            <img src="беббебе.jpg" alt="Лежак «Грааль»" class="w-full block" loading="lazy">
+                            <button type="button" class="product__add"
+                                aria-label="Додати «Лежак «Південь»» в кошик"><img src="img/plus.svg" alt=""></button>
+                        </div>
+                        <h3 class="text-lg mt-3">Лежак «Грааль»</h3>
+                        <p class="flex items-baseline gap-2"><span class="font-semibold">3 400 грн</span><span
+                                class="price-old">4 200 грн</span></p>
+                    </article>
+                    <article>
+                        <div class="product__box">
+                            <img src="зонт.jpg" alt="Консольна парасолька «Оазис»" class="w-full block" loading="lazy">
+                            <button type="button" class="product__add"
+                                aria-label="Додати «Лава-скриня «Затишок»» в кошик"><img src="img/plus.svg"
+                                    alt=""></button>
+                        </div>
+                        <h3 class="text-lg mt-3">Консольна парасолька «Оазис»</h3>
+                        <p class="flex items-baseline gap-2"><span class="font-semibold">4 800 грн</span><span
+                                class="price-old">5 600 грн</span></p>
+                    </article>
+                    <article>
+                        <div class="product__box">
+                            <img src="панно.jpg" alt="Декоративне панно «Сота Лаванда»" class="w-full block"
+                                loading="lazy">
+                            <button type="button" class="product__add"
+                                aria-label="Додати «Декоративне панно «Сота Лаванда»» в кошик"><img src="img/plus.svg"
+                                    alt=""></button>
+                        </div>
+                        <h3 class="text-lg mt-3">Панно для тераси «Лоза»</h3>
+                        <p class="flex items-baseline gap-2"><span class="font-semibold">1 200 грн</span><span
+                                class="price-old">1 500 грн</span></p>
+                    </article>
+                    <article>
+                        <div class="product__box">
+                            <img src="стол.jpg" alt="Обідній стіл «Веранда»" class="w-full block" loading="lazy">
+                            <button type="button" class="product__add"
+                                aria-label="Додати «Обідній стіл «Веранда»» в кошик"><img src="img/plus.svg"
+                                    alt=""></button>
+                        </div>
+                        <h3 class="text-lg mt-3">Обідній стіл «Веранда»</h3>
+                        <p class="flex items-baseline gap-2"><span class="font-semibold">9 800 грн</span><span
+                                class="price-old">11 500 грн</span></p>
+                    </article>
+                    <article>
+                        <div class="product__box">
+                            <img src="гойдалкааа.jpg" alt="Гойдалка Сяйво" class="w-full block" loading="lazy">
+                            <button type="button" class="product__add"
+                                aria-label="Додати «Пісочниця «Дубок»» в кошик"><img src="img/plus.svg" alt=""></button>
+                        </div>
+                        <h3 class="text-lg mt-3">Гойдалка «Сяйво»</h3>
+                        <p class="flex items-baseline gap-2"><span class="font-semibold">12 900 грн</span><span
+                                class="price-old">16 600 грн</span></p>
+                    </article>
+                </div>
+                <nav class="flex items-center justify-center gap-4 mt-10" aria-label="Сторінки каталогу">
+                    <img src="arrow-left.png" alt="Попередня сторінка" class="w-5 h-5">
+                    <span class="dot dot--active"></span><span class="dot"></span><span class="dot"></span><span
+                        class="dot"></span>
+                    <img src="arrow-right.png" alt="Наступна сторінка" class="w-5 h-5">
+                </nav>
+            </div>
+        </section>
+
+        <section class="pb-[var(--section-gap)]">
+            <div class="container-page grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div>
+                    <h2 class="text-title mb-6">Що кажуть про нас клієнти</h2>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="пумо.jpg" alt="" class="w-12 h-12 rounded-full">
+                        <p><span class="block font-semibold">Пума Пумівна</span><span class="text-lead">Керівник кафе
+                                «Тераса»</span></p>
+                    </div>
+                    <blockquote class="text-lead mb-6">«У вас бездоганне відчуття стилю: меблі професійні, цікаві й дуже
+                        корисні для нашого літнього майданчика».</blockquote>
+                    <div class="flex gap-3">
+                        <button type="button" class="icon-btn" aria-label="Попередній відгук"><img src="arrow-left.png"
+                                alt="" class="w-5 h-5"></button>
+                        <button type="button" class="icon-btn icon-btn--accent" aria-label="Наступний відгук"><img
+                                src="arrow-right.png" alt="" class="w-5 h-5"></button>
+                    </div>
+                </div>
+                <img src="тераса.jpg" alt="тераска" class="img-round" loading="lazy">
+            </div>
+        </section>
+
+        <section class="bg-cta section-space" aria-labelledby="cta-title">
+            <div class="container-page grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div>
+                    <h2 id="cta-title" class="text-title mb-3">Отримайте знижку на перше замовлення</h2>
+                    <p class="mb-5">Підпишіться на розсилку</p>
+                    <form action="#" method="get" class="flex flex-col sm:flex-row gap-3">
+                        <label for="email" class="sr-only">Ваша електронна пошта</label>
+                        <input id="email" name="email" type="email" class="field" placeholder="Ваша електронна пошта">
+                        <button type="submit" class="btn btn--dark shrink-0">Підписатись</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-footer section-space pb-6">
+        <div class="container-page">
+            <div class="flex items-center justify-between gap-4 pb-8 border-b border-white/20">
+                <p class="font-heading text-xl font-semibold">Terrasa</p>
+                <div class="flex gap-3">
+                    <a href="#"><img src="drum.png" alt="Instagram" class="w-6 h-6"></a>
+                    <a href="#"><img src="scan-face.png" alt="Facebook" class="w-6 h-6"></a>
+                    <a href="#"><img src="headset.png" alt="Telegram" class="w-6 h-6"></a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 py-10">
+                <div>
+                    <h2 class="font-semibold mb-3">Продукція</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Меблі для саду</a></li>
+                        <li><a href="#" class="footer-link">Для тераси</a></li>
+                        <li><a href="#" class="footer-link">Освітлення</a></li>
+                        <li><a href="#" class="footer-link">Аксесуари</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-semibold mb-3">Сервіс</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Доставка</a></li>
+                        <li><a href="#" class="footer-link">Збірка</a></li>
+                        <li><a href="#" class="footer-link">Гарантія</a></li>
+                        <li><a href="#" class="footer-link">Повернення</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-semibold mb-3">Ресурси</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Каталог PDF</a></li>
+                        <li><a href="#" class="footer-link">Догляд за меблями</a></li>
+                        <li><a href="#" class="footer-link">Блог</a></li>
+                        <li><a href="#" class="footer-link">Питання</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-semibold mb-3">Компанія</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Про нас</a></li>
+                        <li><a href="#" class="footer-link">Преса</a></li>
+                        <li><a href="#" class="footer-link">Партнери</a></li>
+                        <li><a href="#" class="footer-link">Події</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-semibold mb-3">Корисне</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Для дач</a></li>
+                        <li><a href="#" class="footer-link">Для кафе</a></li>
+                        <li><a href="#" class="footer-link">Для готелів</a></li>
+                        <li><a href="#" class="footer-link">Для дітей</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-center pt-6 border-t border-white/20 text-sm">
+                <p>© 2026 Terrasa. Усі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
